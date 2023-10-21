@@ -31,8 +31,14 @@ int len_of_str(char *s);
 int int_output(va_list args);
 int dec_output(va_list args);
 int bin_output(va_list val);
-unsigned int va_arg(val, unsigned int);
 int unsigned_output(va_list args);
 int oct_output(va_list val);
 int hex_output(va_list val);
+int hexa_output(unsigned long int num);
+int string_exclusion(va_list val);
+int pointer_output(va_list val);
+int rot_output (va_list args);
+int len_of_str(char *s);
+int _strlen(const char *s);
+int srev_output(va_list args);
 #endif

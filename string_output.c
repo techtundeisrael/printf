@@ -14,16 +14,16 @@ int string_output(va_list val)
 	if (str == NULL)
 	{
 		str = "(null)";
-		str_len = len_of_str(s);
+		str_len = len_of_str(str);
 		for (i = 0; i < str_len; i++)
-			_putchar(s[i]);
+			_putchar(str[i]);
 		return (str_len);
 	}
 	else
 	{
-		len = len_of_str(s);
+	str_len = len_of_str(str);
 		for (i = 0; i < str_len; i++)
-			_putchar(s[i]);
+			_putchar(str[i]);
 		return (str_len);
 	}
 }

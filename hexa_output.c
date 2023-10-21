@@ -5,7 +5,7 @@
  * @num: arguments.
  * Return: counter.
  */
-int printf_hex_aux(unsigned long int num)
+int hexa_output(unsigned long int num)
 {
 	long int i;
 	long int *hexa;
@@ -18,7 +18,7 @@ int printf_hex_aux(unsigned long int num)
 		x++;
 	}
 	x++;
-	array = malloc(x * sizeof(long int));
+	hexa = malloc(x * sizeof(long int));
 
 	for (i = 0; i < x; i++)
 	{
@@ -28,7 +28,7 @@ int printf_hex_aux(unsigned long int num)
 	for (i = x - 1; i >= 0; i--)
 	{
 		if (hexa[i] > 9)
-			hexa[i] = hexa[i] + 39;
+		hexa[i] = hexa[i] + 39;
 		_putchar(hexa[i] + '0');
 	}
 	free(hexa);

@@ -7,7 +7,7 @@
 int int_output(va_list args)
 {
 	int n = va_arg(args, int);
-	int num, last_num = n % 10, digit x = 1;
+	int num, last_num = n % 10, digit, x = 1;
 	int  i = 1;
 
 	n = n / 10;

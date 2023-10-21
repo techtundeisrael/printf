@@ -9,7 +9,7 @@ int _printf(const char * const format, ...)
 	output_print i[] = {
 		{"%s", string_output},
 	       	{"%c", char_output},
-		{"%%", precent_output},
+		{"%%", percent_output},
 		{"%i", int_output}, 
 		{"%d", dec_output}, 
 		{"%r", srev_output},
@@ -18,7 +18,7 @@ int _printf(const char * const format, ...)
 	       	{"%u", unsigned_output},
 		{"%o", oct_output},
 	       	{"%x", hex_output},
-	       	{"%X", HEX_output},
+	       	{"%X", hexa_output},
 		{"%S", string_exclusion},
 	       	{"%p", pointer_output}
 	};
@@ -33,7 +33,7 @@ Here:
 	while (format[x] != '\0')
 	{
 		y = 10;
-		while (j >= 0)
+		while (y >= 0)
 		{
 			if (i[y].id[0] == format[x] && i[y].id[1] == format[x + 1])
 			{

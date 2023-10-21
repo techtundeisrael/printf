@@ -18,10 +18,10 @@ int hex_output(va_list val)
 		num /= 16;
 		x++;
 	}
-	counter++;
-	array = malloc(counter * sizeof(int));
+	x++;
+	hexa = malloc(x * sizeof(int));
 
-	for (i = 0; i < counter; i++)
+	for (i = 0; i < x; i++)
 	{
 		hexa[i] = temp % 16;
 		temp /= 16;
